@@ -21,9 +21,9 @@ shift(:,11)=shift(:,11);
 %% compute the data
 for a=1%:size(shift,2)
     for j=1%:length(nfaces)
-        nfaces(j)
-        dfn=sprintf('optional/validationdata_64_%g_%g_%g_%ifaces_double.mat',...
-            shift(1,a),shift(2,a),shift(3,a),nfaces(j));
+%         nfaces(j)
+%         dfn=sprintf('optional/validationdata_64_%g_%g_%g_%ifaces_double.mat',...
+%             shift(1,a),shift(2,a),shift(3,a),nfaces(j));
 %         if exist(dfn, 'file')
 %             display('skipping');
 %             continue;
@@ -41,12 +41,12 @@ for a=1%:size(shift,2)
         % scverts{1}=cverts;
         
         %% show untesselated cube
-        figure; grid on; drawMesh(cverts',cfaces,'FaceColor','white','FaceAlpha',0.7,'EdgeAlpha',0.25); axis equal; camproj('perspective');
-        campos([0.5,-2,1.5]*3);
-        camtarget([0 0 0]);
-        xlim([-1,1]);ylim([-1,1]);zlim([-1,1]);
-        camproj('perspective');
-        set(gca,'FontUnits','inches','FontSize',0.15);
+%         figure; grid on; drawMesh(cverts',cfaces,'FaceColor','white','FaceAlpha',0.7,'EdgeAlpha',0.25); axis equal; camproj('perspective');
+%         campos([0.5,-2,1.5]*3);
+%         camtarget([0 0 0]);
+%         xlim([-1,1]);ylim([-1,1]);zlim([-1,1]);
+%         camproj('perspective');
+%         set(gca,'FontUnits','inches','FontSize',0.15);
         % % xlabel('x');
         % % ylabel('y');
         % % zlabel('z');
@@ -60,18 +60,18 @@ for a=1%:size(shift,2)
         % [kdatags,kdata_12_single,k]=validation_fullsampling(Wx,Wy,Wz,cverts,cfaces,1);
         
         %% tesselate
-        while size(cfaces,1)<nfaces(j)
-            [cverts,cfaces]=tesselate(cverts,cfaces);
-            size(cfaces,1)
-        end
+%         while size(cfaces,1)<nfaces(j)
+%             [cverts,cfaces]=tesselate(cverts,cfaces);
+%             size(cfaces,1)
+%         end
         
         %% show tesselated cube
-        figure; grid on; drawMesh(cverts',cfaces,'FaceColor','white','FaceAlpha',0.7,'EdgeAlpha',0.25); axis equal; camproj('perspective');
-        campos([0.5,-2,1.5]*3);
-        camtarget([0 0 0]);
-        xlim([-1,1]);ylim([-1,1]);zlim([-1,1]);
-        camproj('perspective');
-        set(gca,'FontUnits','inches','FontSize',0.15);
+%         figure; grid on; drawMesh(cverts',cfaces,'FaceColor','white','FaceAlpha',0.7,'EdgeAlpha',0.25); axis equal; camproj('perspective');
+%         campos([0.5,-2,1.5]*3);
+%         camtarget([0 0 0]);
+%         xlim([-1,1]);ylim([-1,1]);zlim([-1,1]);
+%         camproj('perspective');
+%         set(gca,'FontUnits','inches','FontSize',0.15);
         % xlabel('x');
         % ylabel('y');
         % zlabel('z');
