@@ -84,7 +84,7 @@ for a=1%:size(shift,2)
         [kdatags,kdata,k]=validation_fullsampling(Wx,Wy,Wz,shift(:,a),cverts,cfaces,0);
         
         %% save results
-        save(dfn,'kdata');
+%         save(dfn,'kdata');
         
     end
 end
