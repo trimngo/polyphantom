@@ -1,0 +1,86 @@
+solid OBJECT
+  facet normal 1 -0 0
+    outer loop
+      vertex 338 -367 109
+      vertex 338 367 109
+      vertex 338 367 110
+    endloop
+  endfacet
+  facet normal 1 0 -0
+    outer loop
+      vertex 338 367 110
+      vertex 338 -367 110
+      vertex 338 -367 109
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 338 367 109
+      vertex -338 367 109
+      vertex -338 367 110
+    endloop
+  endfacet
+  facet normal -0 1 -0
+    outer loop
+      vertex -338 367 110
+      vertex 338 367 110
+      vertex 338 367 109
+    endloop
+  endfacet
+  facet normal -1 -0 -0
+    outer loop
+      vertex -338 367 109
+      vertex -338 -367 109
+      vertex -338 -367 110
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex -338 -367 110
+      vertex -338 367 110
+      vertex -338 367 109
+    endloop
+  endfacet
+  facet normal 0 -1 -0
+    outer loop
+      vertex -338 -367 109
+      vertex 338 -367 109
+      vertex 338 -367 110
+    endloop
+  endfacet
+  facet normal -0 -1 0
+    outer loop
+      vertex 338 -367 110
+      vertex -338 -367 110
+      vertex -338 -367 109
+    endloop
+  endfacet
+  facet normal 0 -0 -1
+    outer loop
+      vertex 338 367 109
+      vertex 338 -367 109
+      vertex -338 367 109
+    endloop
+  endfacet
+  facet normal -0 0 -1
+    outer loop
+      vertex -338 -367 109
+      vertex -338 367 109
+      vertex 338 -367 109
+    endloop
+  endfacet
+  facet normal -0 -0 1
+    outer loop
+      vertex 338 -367 110
+      vertex 338 367 110
+      vertex -338 -367 110
+    endloop
+  endfacet
+  facet normal -0 0 1
+    outer loop
+      vertex 338 367 110
+      vertex -338 367 110
+      vertex -338 -367 110
+    endloop
+  endfacet
+endsolid OBJECT
