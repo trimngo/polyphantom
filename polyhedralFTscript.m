@@ -7,7 +7,7 @@ function kdata=polyhedralFTscript(r_v,face_node,kvec)
 
 %replicate the first vertex
 face_node_X=cellfun(@(x) [x(:);x(1)],face_node,'UniformOutput',false);
-%k is in a linear form
+%k is in linear form
 
 %% Parallel computing
 % tmp  = ver;
